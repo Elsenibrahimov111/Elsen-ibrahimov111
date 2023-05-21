@@ -1,102 +1,273 @@
-*{
-    margin: 0%;
-    padding: 0%;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: Roboto;
+}
+
+body {
+    display: flex;
+}
+
+aside {
+    height: 100vh;
+    width: 25%;
+    background-color: #b3b3b3;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    position: absolute;
+    right: 0;
+    width: 75%;
+}
+
+
+a {
     text-decoration: none;
+}
+
+.spa {
+    text-decoration: none;
+    color: rgb(212, 138, 1);
+    margin-top: 20px;
+}
+
+.spa:hover {
+    text-decoration: underline;
+}
+
+.p1 {
+    line-height: 25px;
+    margin-top: 50px;
+    color: #333;
+}
+
+ul {
     list-style: none;
 }
 
-    nav{
-        background-color: rgb(20, 19, 19);
-        height: 80%;
-        width: 100%;
+li {
+    margin: 20px;
+    color: #888;
+    font-weight: 700;
+}
 
-    }
-    label.logo{
+li:hover {
+    cursor: pointer;
+    color: #444;
+    text-decoration: underline 2px #444;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
 
-        color: white;
-        font-size: 1em;
-        line-height: 70px;
-        padding: 0 100px;
-        font-weight: 800;
-    }
-    nav ul{
-        float: right;
-        margin-right: 30px;
-        padding: 0 100px;
-        
-    }
-    nav ul li{
-        display: inline-block;
-        line-height: 80px;
-        margin: 0 4px;
-        color: white;
-         
-        
-    }
-    nav ul li a 
-    {
-       
-        font-size: 1em;
-        padding: 3px 10px;
-    }
-    body{
-        height: 200px; ;
-    }
-    .sinif
-    {
-        background-color: rgb(20, 19, 19);
-        color: white;
-        background-image: url(d60105bb-eb00-4c36-bcd5-7bc8f521b825.jpg);
-        background-repeat: no-repeat;
-        background-position: 90%;
-        height: 400px;
-        font-size: 2em;
-        
-        
-    }
-    .button{
-        background-color:rgb(64, 118, 235); 
-        border: none;
-      
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 30px;
-    }
-     .Button{
-        background-color:rgb(20, 19, 19);
-      
-        border: 2px;
-        border-style: ridge;
-        color: white;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 30px;
+.h21 {
+    margin-bottom: 100px;
+    font-size: 38px;
+    color: #333;
+    letter-spacing: 3px;
+}
 
-     }
-     .better{
+.divimg1 {
+    border-radius: 100%;
+    margin-bottom: 50px;
+    margin-top: 100px
+    
+    
+}
 
-        font-size: 20px;
-        margin-top: 100px;
-       
-     }
-     i{
-         color: blue;
-         margin-left: 500px;
-         width: 100px;
-        
-         height: 10px;
-         font-size: 2.2em;
-         top: 10px;
+.img1 {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
 
-     }
-     h6{
+.p2 {
+    margin-bottom: 20px;
+    color: #999;
+    font-size: 24px;
+}
 
-         margin-left: 500px;
-         font-size: 1.5em;
-     }
+.h22 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.p3 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #444;
+    font-family: cursive;
+    text-align: center;
+}
+
+.a1 {
+    text-decoration: underline #999;
+    color: #999;
+    font-size: 17px;
+}
+
+.imgg {
+    width: 20px;
+    margin: 10px;
+}
+
+.icon{
+cursor: pointer;
+margin-top: 20px;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#home,
+#photography,
+#travel,
+#fashion,
+#about,
+#contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.h23 {
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-family: cursive;
+}
+
+#container {
+    height: 100vh;
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    font-family: sans-serif;
+}
+
+#calculator {
+    padding: 10px;
+    border-radius: 1em;
+    height: 380px;
+    width: 400px;
+    margin: auto;
+    background-color: #191b28;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    
+    .display-box {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #dcdbe1;
+    border: solid black 0.5px;
+    color: black;
+    border-radius: 5px;
+    width: 100%;
+    height: 65%;
+    }
+    
+    #btn {
+    background-color: #fb0066;
+    }
+    
+    input[type=button] {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #64278f;
+    color: white;
+    border: solid black 0.5px;
+    width: 100%;
+    border-radius: 5px;
+    height: 70%;
+    outline: none;
+    }
+    
+    input:active[type=button] {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+    -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+    box-shadow: inset 0px 0px 5px #c1c1c1;
+    }
+
+.screen {
+    grid-column: 1 / 5;
+    border-radius: .75rem;
+    font-size: 2rem;
+    height: 6rem;
+    color: #fff;
+    background: #000000;
+    text-align: end;
+    padding: .5rem;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+
+
+
+
+}
+
+.symbol,
+.number,
+.symbol1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    aspect-ratio: 1;
+    font-size: 1.25rem;
+    color: #fff;
+    transition: .15 ease;
+    border-radius: 50%;
+}
+
+.symbol {
+    background: #ff0000;
+}
+
+.symbol:hover {
+    background: #4d55b1;
+}
+
+.symbol1 {
+    background-color: orange;
+}
+
+.symbol1:hover {
+    background: rgb(26, 26, 54);
+}
+
+.number {
+    background: #4d55b1;
+}
+
+.number:hover {
+    background: #333849ac;
+}
